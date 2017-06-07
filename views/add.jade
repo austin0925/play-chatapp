@@ -3,7 +3,7 @@ extends layout
 block content
     h1 Create a new chat room
 
-    form
+    form(method="post")
         fieldset.form-group
             label(for="name") Name:
             input(name="name", type="text", placeholder="Enter a name")
