@@ -18,7 +18,7 @@ app.get('/', function handler(req, res){
 });
 
 var adminRouter = require("./admin");
-app.use(adminRouter);
+app.use("/admin", adminRouter);
 
 app.listen(3000, function(){
     console.log('Chat app listening on port 3000!');
