@@ -1,14 +1,7 @@
 var express = require("express");
 var app = express();
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
 var rooms = require("./data/rooms.json");
-=======
->>>>>>> 2d62dc68308830bc79dd399a71589ebf36c6c055
 var bodyParser = require("body-parser");
->>>>>>> 72a4c84c2fa504f2807d66dcefa953036150a154
 
 app.set("views", "./views");
 app.set('view engine', 'jade');
@@ -40,7 +33,6 @@ app.get('/', function (req, res, next) {
     next();
 });
 
-<<<<<<< HEAD
 app.get('/admin/rooms', function(req, res){
     // res.send('hello worlds, make better worlds!');
     res.render("rooms", {
@@ -53,13 +45,8 @@ app.get('/admin/rooms/add', function(req, res){
     res.render("add");
 });
 
-app.post('/admin/rooms/add', function(req, res){
-    res.render("nothing");
-});
-=======
 var adminRouter = require("./admin");
 app.use("/admin", adminRouter);
-<<<<<<< HEAD
 app.use("/admin", function (req, res, next) {
     console.log('admin request: ' + req.url);
     next();
@@ -76,10 +63,3 @@ app.use(function (error, req, res, next) {
 app.listen(3000, function () {
     console.log('Chat app listening on port 3000!');
 });
-=======
->>>>>>> 72a4c84c2fa504f2807d66dcefa953036150a154
-
-app.listen(3001, function(){
-    console.log('Chat app listening on port 3001!');
-});
->>>>>>> 2d62dc68308830bc79dd399a71589ebf36c6c055
