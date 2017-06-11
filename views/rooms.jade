@@ -1,14 +1,32 @@
 extends layout
 
 block content
+<<<<<<< HEAD
     h1 Chat Rooms from jade!!:
     table.table.table-striped
         thead
             th NAME
+=======
+    h1 Chat Rooms
+    a.btn.btn-primary(href="/admin/rooms/add") Create a chat room
+    table.table.table-striped
+        thead
+            th
+            th NAME
+            th
+>>>>>>> 72a4c84c2fa504f2807d66dcefa953036150a154
             th ID
         tbody
             each room in rooms
                 tr
+<<<<<<< HEAD
                     td= room.name
+=======
+                    td(style="width: 50px;"): a(href="/admin/rooms/delete/#{room.id}")
+                        span.glyphicon.glyphicon-remove
+                    td= room.name
+                    td(style="width: 50px;"): a(href="/admin/rooms/edit/#{room.id}")
+                        span.glyphicon.glyphicon-pencil
+>>>>>>> 72a4c84c2fa504f2807d66dcefa953036150a154
                     td= room.id
 //    = JSON.stringify(rooms)
