@@ -2,3 +2,13 @@ extends layout
 
 block content
     h1 Chat Rooms from jade!!:
+    table.table.table-striped
+        thead
+            th NAME
+            th ID
+        tbody
+            each room in rooms
+                tr
+                    td= room.name
+                    td= room.id
+//    = JSON.stringify(rooms)
