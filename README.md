@@ -3,4 +3,4 @@
 * [https://expressjs.com](https://expressjs.com) from main site
 
 # js lib
-* hammer.js
+* [hammer.js](http://hammerjs.github.io)
