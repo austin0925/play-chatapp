@@ -4,3 +4,4 @@
 
 # js lib
 * [hammer.js](http://hammerjs.github.io)
+* [phantomjs](https://phantomjs.org)
